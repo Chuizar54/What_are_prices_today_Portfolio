@@ -2,8 +2,8 @@
 Brief introductory portfolio showing trading card pricing observations. For this very brief project I used TCGPlayer.com pricing data to answer the questions: 
 1) what is the price today(of any card)?
 2) Which prices are rising or falling?
-3) What are the biggest moves in terms of dollar amount or percent change?
-4) Are these price movements trends or one day blips
+3) What are the biggest moves by dollar amount or percent change?
+4) Are these price movements trends?
 I have provided the SQL scripts i used to create the tables and query them to answer questions.
 
 **Tools & Languages:**
@@ -14,8 +14,8 @@ I have provided the SQL scripts i used to create the tables and query them to an
 
 **Database structure:**
 
-```Main DB
-
+```
+Main DB
 ├── cards - table that contains metada about the cards
 │  ├── SKU (Primary Key)
 │  ├── card_name 
@@ -48,4 +48,20 @@ I have provided the SQL scripts i used to create the tables and query them to an
 │  └──date_created_at (Date only time stamp of when the entry was created)
 ```
 
+**Queries**
 
+- prices today
+  - Quick query to see what current prices are.
+  - Optional filters to sort by game, set, finish, rarity, tc. (What is the most expensive Rare Foil card)
+  - Answeres the question: What is the price today?
+- price increase/decrease day to day
+  - Query that checks which cards have a higher (or lower) market price today than it did yesterday
+  - Answers questions: Which prices are rising and falling? What are the biggest movers by dollar amount or percent change?
+  - Returns results in dollar difference and percent difference
+    - sortable by both options as well
+  - filter by only cards that are in stock and/or price differences over a certain amount
+    - trying to reduce the amount of low value cards that increase a few cents resulting in high percentage differences.
+- trending price increase/decrease
+  - Query that checks if the price today is higher than yesterday and last week
+  - Answers the question: Are these price movements trends?
+  - filter by cards that are in stock
