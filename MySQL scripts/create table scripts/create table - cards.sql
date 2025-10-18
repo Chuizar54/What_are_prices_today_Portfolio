@@ -1,0 +1,16 @@
+CREATE TABLE `cards` (
+  `SKU` varchar(15) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `card_name` varchar(80) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `set_code` varchar(4) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `card_number` varchar(9) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `finish` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rarity` varchar(25) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `set_name` varchar(80) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `when_created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `when_updated` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `sub_set_code` varchar(80) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `sub_set_name` varchar(80) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `tcgplayer_id` varchar(25) COLLATE utf8mb4_unicode_ci DEFAULT ''0'',
+  `game_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`SKU`),
+) ENGINE=InnoDB AUTO_INCREMENT=21891 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci
