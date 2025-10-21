@@ -12,6 +12,12 @@ I have provided the SQL scripts i used to create the tables and query them to an
 
 - SQL queries
 
+- Tableau
+
+**Links to Visualizations:**
+
+Tableau: https://public.tableau.com/shared/4SBFRCFZ7?:display_count=n&:origin=viz_share_link
+
 **Database structure:**
 
 ```
