@@ -4,6 +4,8 @@ Brief introductory project showing trading card pricing observations. For this v
 2) Which prices are rising or falling?
 3) What are the biggest moves by dollar amount or percent change?
 4) Are these price movements trends?
+
+
 I have provided the SQL scripts i used to create the tables and query them to answer questions. The work done in this projects assumes that pricing data is collected data. The data used in the the visualizations are incomplete sample data. 
 
 **Tools & Languages:**
