@@ -18,6 +18,8 @@ I have provided the SQL scripts i used to create the tables and query them to an
 
 Tableau: https://public.tableau.com/shared/4SBFRCFZ7?:display_count=n&:origin=viz_share_link
 
+  - This interactive Tableau dashboard analyzes pricing trends for a sample of trading cards over a one-week period. The primary view displays card names alongside their current market and low prices. A set of filters across the top, including game, set, rarity, and quantity on hand, allows for focused exploration without scrolling through the entire ~16,000 row dataset. When a card is selected, the supporting panes dynamically update to visualize its day-over-day and week-over-week price changes, as well as a chart tracking daily market movements. This design enables quick identification of price shifts and trend patterns across sets, supporting data-driven pricing and inventory decisions.
+
 **Database structure:**
 
 ```
