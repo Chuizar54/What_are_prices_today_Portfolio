@@ -1,5 +1,5 @@
 # What_are_prices_today_Portfolio
-Brief introductory portfolio showing trading card pricing observations. For this very brief project I used TCGPlayer.com pricing data to answer the questions: 
+Brief introductory project showing trading card pricing observations. For this very brief project I used TCGPlayer.com pricing data to answer the questions: 
 1) what is the price today(of any card)?
 2) Which prices are rising or falling?
 3) What are the biggest moves by dollar amount or percent change?
